@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Mukta:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <!-- Reset de CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Inclusion de logo en pestañas -->
+    <link rel="icon" href="imagenes/logo.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Mis estilos CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header id="encabezadoPrincipal">
+        <div id="logoNombre">
+            <a href="index.html"><img id="logo" src="imagenes/logo.png" width="100" height="100"></a>
+            <!--class="hogar" class="hogar"-->
+            <h1>HOGAR MIAU GUAU</h1>
+        </div>
+        <nav>
+            <div id="navegar">
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i> Institucional</li>
+                        <li class="institucional"><a href="quienes_somos.html">Quienes somos</a></li>
+                        <li class="institucional"><a href="nuestros_logros.html">Nuestros logros</a></li>
+                        <li class="institucional"><a href="galeria.html">Galería de fotos</a></li>
+                        <li class="institucional"><a href="colaboradores.html">Colaboradores</a></li>
+                        <li class="institucional"><a id="ubicacion" href="#nuestraUbicacion">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-handshake-angle"></i> Cómo ayudar</li>
+                        <li class="ayudar"><a href="donacion.html">Donación</a></li>
+                        <li class="ayudar"><a href="voluntarios.html">Voluntariado</a></li>
+                        <li class="ayudar"><a href="adopcion.html">Adopción</a></li>
+                    </ul>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-store"></i> <a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-mobile-screen"></i> <a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h2>¡Contáctanos!</h2>
+    <main>
+        <section>
+            <p class="enlaceCont">Nuestro Teléfono: <span>(011) 9876-9876</span></p>
+            <p class="enlaceCont">Nuestro mail: <a
+                    href="mailto:info@hogarmiauguau.org"><span>info@hogarmiuguau.org</span></a></p>
+            <p class="enlaceCont">Nuestro WhastsAApp: <a href="https://wa.me/+541135690086"><span>+54 11
+                        9876-5432</span></a></p>
+        </section>
+        <form name="formularioContacto" action="https://formspree.io/f/xeoqojnb" method="post">
+            <div id="formCont">
+                <label for="nombre4">Tus Nombres:</label>
+                <input type="text" id="nombre4" name="nombre4" required autofocus>
+                <label for="apellido4">Tus Apellidos:</label>
+                <input type="text" id="apellido4" name="apellido4" required>
+                <label for="email4">Tu Correo:</label>
+                <input type="email" id="email4" name="email4" required>
+                <label for="telefono2">Tu celular:</label>
+                <div id="nroTelefono">
+                    <div id="carateristica">
+                        <input type="tel" class="telefono4" name="telefono4" required size="3" maxlength="4"
+                            placeholder="Carac.">
+                    </div>
+                    <div id="telefono">
+                        <input type="tel" class="telefono4" name="telefono4" required size="7" maxlength="8"
+                            placeholder="Número">
+                    </div>
+                </div>
+                <label for="opinion4">¡Déjanos tu inquietud!</label>
+                <textarea name="opinion4" id="opinion4" rows="10" cols="50"></textarea>
+                <button id="botonSubmit" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h6>¡Síguenos en nuestras redes!</h6>
+        <div id="redes">
+            <div class="faceInsta">
+                <div class="face">
+                    <img src="imagenes/facebook.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="face">
+                    <p><a href="https://www.facebook.com" target="_blank"><em>Facebook</em></a></p>
+                </div>
+            </div>
+            <div class="faceInsta">
+                <div class="insta">
+                    <img src="imagenes/instagram.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="insta">
+                    <p><a href="https://www.Instagram.com" target="_blank"><em>Instagram</em></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

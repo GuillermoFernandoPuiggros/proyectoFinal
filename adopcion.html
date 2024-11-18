@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="imagenes/logo.png" alt="Hogar Miau Guau" width="100px" height="100px">
+    <title>Adopción</title>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <h4>Adoptar una mascota</h4>
+            <p>
+                Adoptar una mascota es una gran responsabilidad, es incluir un nuevo miembro a la familia.
+            </p>
+            <p>
+                Ellos necesitan un hogar, mucho amor y atención, recuerda que sufrieron abandono. No son rencorosos y serán incondicionales.
+            </p>
+            <p>
+                Para adoptar una mascota en el Hogar Miau Guau, completa el formulario con tus datos.</p>
+            <p>
+                Una vez enviados sus datos y confirmado que cumplen los requisitos, recibirán un correo de confimación.
+            </p>
+            <p>
+                ¡Muchas gracias por adoptar!
+            </p>
+        </section>
+        <form name="formulariAdopcion" action="https://formspree.io/f/xldedroz" method="post">
+            <label for="nombre3">Tus Nombres:</label>
+            <input type="text" id="nombre3" name="nombre3" required autofocus>
+            <label for="apellido3">Tus Apellidos:</label>
+            <input type="text" id="apellido3" name="apellido3" required>
+            <label for="dni3"> Tu DNI:</label>
+            <input type="number" id="dni3" name="dni3" required size="7" maxlength="8">
+            <label for="fechaNac3">Tu fecha de nacimiento:</label>
+            <input type="date" id="fechaNac3" name="fechaNac3" required>
+            <label for="domicilio3">Tu domicilio:</label>
+            <input type="text" id="domicilio3" name="domicilio3" required>
+            <label for="localidad3">Localidad:</label>
+            <input type="text" id="localidad3" name="localidad3" required>
+            <label for="provincia3">Provincia:</label>
+            <input type="text" id="provincia3" name="provincia3" required>
+            <label for="email3">Tu Correo:</label>
+            <input type="emai3" id="email3" name="email3" required>
+            <label for="telefono3">Tu celular:</label>
+            <input type="tel" class="telefono3" name="telefono3" required size="3" maxlength="4" placeholder="Carac.">
+            <input type="tel" class="telefono3" name="telefono3" required size="7" maxlength="8" placeholder="Número">
+            <label for="tiempo3">Elijo mi tiempo:</label>
+            <select name="miTiempo" id="miTiempo" required>
+                <option value="opcion1">Perro</option>
+                <option value="opcion2">Gato</option>
+            </select>
+            <label for="opinion3">¿Qué te motiva a adoptar?</label>
+            <textarea name="opinion3" id="opinion3" rows="4" cols="50"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>

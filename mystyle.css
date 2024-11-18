@@ -1,0 +1,363 @@
+html {
+  font-size: 10px;
+}
+
+@media (max-width: 400px) {
+  html {
+  font-size: 80%;
+}
+}
+
+header {
+  background: coral;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+#logo {
+  float: left;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+#logoNombre {
+  width: auto;
+  height: 150px;
+}
+
+h1 {
+  font-family: "Spicy Rice", Arial, Helvetica, sans-serif;
+  font-size: 11em;
+  color: black;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+#navegar li {
+  list-style: none;
+  background: black;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  margin: 0px;
+}
+
+#navegar li:hover {
+  background: grey;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:visited {
+  color: white;
+}
+#navegar {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menuNav {
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: "Source Serif 4", Arial, Helvetica, sans-serif;
+  margin: 0px -10px;
+}
+
+body {
+  background: rgb(88, 5, 5);
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contenedorVideo {
+  width: 450px;
+  height: 338px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(videos/sombra.png);
+}
+
+#contenedorVideo video {
+  background-color: skyblue;
+  padding: 4px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+}
+
+h2 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  font-size: 7em;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  color: chocolate;
+}
+
+.compromiso {
+  color: whitesmoke;
+  font-size: 2em;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  padding-left: 40px;
+}
+
+h3 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  font-size: 5em;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  color: chocolate;
+}
+
+h4 {
+  margin-top: 130px;
+  color: darkorange;
+  padding-left: 80px;
+  font-size: 3em;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  font-size: 2em;
+  font-family: Helvetica, Arial, sans-serif;
+  color: gainsboro;
+}
+
+h6 {
+  font-size: 1.5em;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 150px;
+}
+
+#nuestraUbicacion {
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 25px solid rgb(89, 4, 97);
+  border-radius: 40px;
+}
+
+footer {
+  background: wheat;
+}
+
+footer p {
+  font-size: 1.5em;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: royalblue;
+}
+
+footer a:visited {
+  color: royalblue;
+}
+
+.face {
+  display: inline-block;
+}
+.insta {
+  display: inline-block;
+}
+
+#redes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.faceInsta {
+  display: block;
+  padding-right: 230px;
+}
+
+.enlaceCont {
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-size: 1.6em;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+#formCont {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 800px;
+  margin-left: 40px;
+}
+
+#formCont label {
+  display: inline-block;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-size: 1.6em;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+#nombre4,
+#apellido4,
+#email4 {
+  width: 300px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+#telefono4 {
+  display: inline-block;
+}
+
+#nroTelefono {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#carateristica input {
+  width: 50px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+#telefono input {
+  width: 100px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+#opinion4 {
+  width: 450px;
+  margin-bottom: 40px;
+}
+
+#botonSubmit {
+  width: 100px;
+  margin-left: 355px;
+}
+
+.logro {
+  color: whitesmoke;
+  font-size: 2em;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  padding-left: 40px;
+}
+
+.fa-regular {
+  color: red;
+}
+
+#ntrosLogros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.reseñas {
+  background: linear-gradient(to right bottom, rgb(67, 4, 168), rgb(91, 91, 240), rgb(207, 214, 247));
+  width: 250px;
+  height: auto;
+  padding: 20px;
+}
+
+#expresiones {
+  font-size: 2em;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  color: bisque;
+}
+
+.reseñas p {
+  font-size: 1.3em;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  color: bisque;
+  font-style: oblique;
+}
+
+.reseñas cite {
+  font-size: 1.4em;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  color: bisque;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.reseñas h5 {
+ font-weight: bold;
+ font-style: italic;
+ color: aqua;
+}
+
+#recopilaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.productos img {
+  width: 250px;
+  height: 250px;
+}
+
+.titTarjeta {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+}
+
+.descripProd {
+  font-size: 1.3em;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+}
+
+.precioProd {
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+}
+
+.cuotaProd {
+  font-size: 1.5em;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+}
+
+.productos {
+  width: 250px;
+  height: 430px;
+  padding: 25px;
+  background: cadetblue;
+  border: solid darkgreen 3px;
+}
+
+.tarjetas {
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="imagenes/logo.png" alt="Hogar Miau Guau" width="100px" height="100px">
+    <title>Donacion</title>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <h4>Donar</h4>
+            <p>
+                Para colaboran con el Hogar Miau Guau, te pedimos que elijas uno de los medioa para realizarlo y
+                completes el formulario con tus datos.</p>
+            <p>
+                Para envíar el comprobante de la donación, hacerlo a nuetro mail de contacto:
+                <a href="mailto:donaciones@hogarmiauguau.org">donaciones@hogarmiuguau.org</a>
+            </p>
+            <p>
+                Una vez efectuada la donación, recibirás el recibo correspondiente en tu correo.
+            </p>
+            <p>
+                ¡Muchas gracias por tu colaboración!
+            </p>
+        </section>
+        <form name="formularioDonacion" action="https://formspree.io/f/mjkvkbwp" method="post">
+            <label for="nombre1">Tus Nombres:</label>
+            <input type="text" id="nombre1" name="nombre1" required>
+            <label for="apellido1">Tus Apellidos:</label>
+            <input type="text" id="apellido1" name="apellido1" required>
+            <label for="fechaNac1">Tu fecha de nacimiento:</label>
+            <input type="date" id="fechaNac1" name="fechaNac1" required>
+            <label for="email1">Tu Correo:</label>
+            <input type="email" id="email1" name="email1" required>
+            <label for="donacion1">Elijo mi forma de Donar:</label>
+            <select name="formadonar" id="formadonar" required>
+                <option value="opcion1">Transferencia</option>
+                <option value="opcion2">Mercado Pago</option>
+            </select>
+            <label for="opinion1">¿Qué te motiva a donar?</label>
+            <textarea name="opinion1" id="opinion1" rows="4" cols="50"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <section>
+            <table id="tablaCuentas">
+                <caption>Nuetros medios para donar.</caption>
+                <thead>
+                    <tr>
+                        <th>Por transferencia</th>
+                        <th>Por Mercado Pago</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Cuenta Nº 000123-4/21</p>
+                            <p>Banco Del Solar</p>
+                            <p>Titular de la cuenta: Hogar Miau Guau</p>
+                        </td>
+                        <td>
+                            <p>Alias: miau-gua.mp</p>
+                            <p>Titular de la cuenta: Hogar Miau Guau</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
