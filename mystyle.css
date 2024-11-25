@@ -9,7 +9,7 @@ html {
 }
 
 header {
-  background: coral;
+  background: #22177A;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -28,7 +28,7 @@ header {
 h1 {
   font-family: "Spicy Rice", Arial, Helvetica, sans-serif;
   font-size: 11em;
-  color: black;
+  color: #F5EEE6;/*rgb(220, 230, 132);*/  /*#E0966; */
   padding-top: 50px;
   padding-left: 200px;
 }
@@ -69,7 +69,7 @@ nav a:visited {
 }
 
 body {
-  background: rgb(88, 5, 5);
+  background: #605EA1;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -156,7 +156,7 @@ h6 {
 }
 
 footer {
-  background: wheat;
+  background: #E6E9AF;
 }
 
 footer p {
