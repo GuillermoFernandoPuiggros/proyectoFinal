@@ -98,8 +98,9 @@ h2 {
   margin-right: auto;
   padding-left: 80px;
   font-size: 7em;
+  font-weight: bold;
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
-  color: chocolate;
+  color: black;
 }
 
 .compromiso {
