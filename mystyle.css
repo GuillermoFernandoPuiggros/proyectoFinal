@@ -2,12 +2,7 @@ html {
   font-size: 10px;
 }
 
-@media (max-width: 400px) {
-  html {
-  font-size: 80%;
-}
-}
-
+/* Estilo del header común a todas la páginas */
 header {
   background: #22177A;
   margin-left: auto;
@@ -68,6 +63,7 @@ nav a:visited {
   margin: 0px -10px;
 }
 
+/* Estilo del body general a todas las páginas */
 body {
   background: #605EA1;
   margin-top: 0px;
@@ -75,6 +71,7 @@ body {
   margin-right: auto;
 }
 
+/* Estilo del video isntitucional */
 #contenedorVideo {
   width: 450px;
   height: 338px;
@@ -91,7 +88,7 @@ body {
   top: -20px;
   left: -20px;
 }
-
+/* Estilo de los h2 de todas las páginas */
 h2 {
   text-align: left;
   margin-left: auto;
@@ -102,7 +99,7 @@ h2 {
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
   color: black;
 }
-
+/* Estilo del compromiso del Hogar */
 .compromiso {
   color: whitesmoke;
   font-size: 2em;
@@ -110,7 +107,7 @@ h2 {
   font-style: oblique;
   padding-left: 40px;
 }
-
+/* Estilo de los h3 de todas las páginas */
 h3 {
   text-align: left;
   margin-left: auto;
@@ -120,7 +117,7 @@ h3 {
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
   color: chocolate;
 }
-
+/* Estilo de los h4 de todas las páginas */
 h4 {
   margin-top: 130px;
   color: darkorange;
@@ -128,13 +125,13 @@ h4 {
   font-size: 3em;
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
 }
-
+/* Estilo de los h5 de todas las páginas */
 h5 {
   font-size: 2em;
   font-family: Helvetica, Arial, sans-serif;
   color: gainsboro;
 }
-
+/* Estilo de los h6 de todas las páginas */
 h6 {
   font-size: 1.5em;
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
@@ -146,7 +143,7 @@ h6 {
   padding-top: 20px;
   padding-right: 150px;
 }
-
+/* Estilo de la ubicación del Hogar */
 #nuestraUbicacion {
   width: 600px;
   height: 400px;
@@ -155,7 +152,7 @@ h6 {
   border: 25px solid rgb(89, 4, 97);
   border-radius: 40px;
 }
-
+/* Estilo del footer de las paginas */
 footer {
   background: #E6E9AF;
 }
@@ -201,7 +198,7 @@ footer a:visited {
   padding-left: 40px;
   padding-bottom: 20px;
 }
-
+/* Estilo del formulario de contacto */
 #formCont {
   display: flex;
   justify-content: flex-start;
@@ -256,7 +253,7 @@ footer a:visited {
   width: 100px;
   margin-left: 355px;
 }
-
+/* Estilo de los logros */
 .logro {
   color: whitesmoke;
   font-size: 2em;
@@ -275,7 +272,7 @@ footer a:visited {
   grid-template-rows: 1fr;
   gap: 10px;
 }
-
+/* Estilo de las reseñas */
 .reseñas {
   background: linear-gradient(to right bottom, rgb(67, 4, 168), rgb(91, 91, 240), rgb(207, 214, 247));
   width: 250px;
