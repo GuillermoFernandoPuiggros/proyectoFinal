@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="imagenes/logo.png" alt="Hogar Miau Guau" width="100px" height="100px">
-    <title>Adopción</title>
-
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Mukta:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <!-- Reset de CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Inclusion de logo en pestañas -->
+    <link rel="icon" href="imagenes/logo.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Mis estilos CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Adopcion</title>
 </head>
 
 <body>
+    <header id="encabezadoPrincipal">
+        <div id="logoNombre">
+            <a href="index.html"><img id="logo" src="imagenes/logo.png" width="100" height="100"></a>
+            <h1>HOGAR MIAU GUAU</h1>
+        </div>
+        <nav>
+            <div id="navegar">
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i> Institucional</li>
+                        <li class="institucional"><a href="quienes_somos.html">Quienes somos</a></li>
+                        <li class="institucional"><a href="nuestros_logros.html">Nuestros logros</a></li>
+                        <li class="institucional"><a href="galeria.html">Galería de fotos</a></li>
+                        <li class="institucional"><a href="colaboradores.html">Colaboradores</a></li>
+                        <li class="institucional"><a id="ubicacion" href="#nuestraUbicacion">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-handshake-angle"></i> Cómo ayudar</li>
+                        <li class="ayudar"><a href="donacion.html">Donación</a></li>
+                        <li class="ayudar"><a href="voluntarios.html">Voluntariado</a></li>
+                        <li class="ayudar"><a href="adopcion.html">Adopción</a></li>
+                    </ul>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-store"></i> <a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <li><i class="fa-solid fa-mobile-screen"></i> <a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <section>
             <h4>Adoptar una mascota</h4>
@@ -17,7 +69,8 @@
                 Adoptar una mascota es una gran responsabilidad, es incluir un nuevo miembro a la familia.
             </p>
             <p>
-                Ellos necesitan un hogar, mucho amor y atención, recuerda que sufrieron abandono. No son rencorosos y serán incondicionales.
+                Ellos necesitan un hogar, mucho amor y atención, recuerda que sufrieron abandono. No son rencorosos y
+                serán incondicionales.
             </p>
             <p>
                 Para adoptar una mascota en el Hogar Miau Guau, completa el formulario con tus datos.</p>
