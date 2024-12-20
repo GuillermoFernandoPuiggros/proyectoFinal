@@ -252,6 +252,10 @@ footer a:visited {
 #botonSubmit {
   width: 100px;
   margin-left: 355px;
+  border-radius: 10px;
+  background: black;
+  color: whitesmoke;
+  margin-bottom: 50px;
 }
 /* Estilo de los logros */
 .logro {
@@ -355,6 +359,95 @@ footer a:visited {
   gap: 10px;
 }
 
+/* Estilo de donaciones */
+
+.explicDonar {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  padding-left: 40px;
+}
+
+#donar {
+  margin-bottom: 100px;
+}
+
+#formDonar {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  margin-left: 40px;
+}
+
+.datosDonar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+#formDonar label {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+#nombre1,
+#apellido1,
+#email1 {
+  width: 300px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+#fechaNac1 {
+  width: 100px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+#comoDonar {
+  width: 130px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+#formDonar #nombre1, #apellido1 {
+  margin-left: 82px;
+}
+
+#formDonar #fechaNac1 {
+  margin-left: 14px;
+}
+
+#formDonar #email1 {
+  margin-left: 104px;
+}
+
+#formDonar #comoDonar {
+  margin-left: 11px;
+}
+
+#motivoDonar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#motivoDonar label {
+  padding-right: 10px;
+}
+
+
+#tablaCuentas caption{
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 
 

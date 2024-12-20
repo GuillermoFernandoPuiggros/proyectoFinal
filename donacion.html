@@ -65,56 +65,63 @@
     <main>
         <!-- Explicación del formulario de donación-->
         <section>
-            <h4>Donar</h4>
-            <p>
-                Para colaboran con el Hogar Miau Guau, te pedimos que elijas uno de los medioa para realizarlo y
-                completes el formulario con tus datos.</p>
-            <p>
-                Para envíar el comprobante de la donación, hacerlo a nuetro mail de contacto:
-                <a href="mailto:donaciones@hogarmiauguau.org">donaciones@hogarmiuguau.org</a>
-            </p>
-            <p>
-                Una vez efectuada la donación, recibirás el recibo correspondiente en tu correo.
-            </p>
-            <p>
-                ¡Muchas gracias por tu colaboración!
-            </p>
+            <div id="donar">
+                <h4>Donar</h4>
+                <p class="explicDonar">
+                    Para colaboran con el Hogar Miau Guau, te pedimos que elijas uno de los medioa para realizarlo y
+                    completes el formulario con tus datos.</p>
+                <p class="explicDonar">
+                    Para envíar el comprobante de la donación, hacerlo a nuetro mail de contacto:
+                    <a href="mailto:donaciones@hogarmiauguau.org">donaciones@hogarmiuguau.org</a>
+                </p>
+                <p class="explicDonar">
+                    Una vez efectuada la donación, recibirás el recibo correspondiente en tu correo.
+                </p>
+                <p class="explicDonar">
+                    ¡Muchas gracias por tu colaboración!
+                </p>
+            </div>
         </section>
         <!-- Formulario de donación -->
-        <form name="formularioDonacion" action="https://formspree.io/f/mjkvkbwp" method="post">
-            <div>
-                <label for="nombre1">Tus Nombres:</label>
-                <input type="text" id="nombre1" name="nombre1" required>
-            </div>
-            <div>
-                <label for="apellido1">Tus Apellidos:</label>
-                <input type="text" id="apellido1" name="apellido1" required>
-            </div>
-            <div>
-                <label for="fechaNac1">Tu fecha de nacimiento:</label>
-                <input type="date" id="fechaNac1" name="fechaNac1" required>
-            </div>
-            <div>
-                <label for="email1">Tu Correo:</label>
-                <input type="email" id="email1" name="email1" required>
-            </div>
-            <div>
-                <label for="donacion1">Elijo mi forma de Donar:</label>
-                <select name="formadonar" id="formadonar" required>
-                    <option value="opcion1">Transferencia</option>
-                    <option value="opcion2">Mercado Pago</option>
-                </select>
-            </div>
-            <div>
-                <label for="opinion1">¿Qué te motiva a donar?</label>
-                <textarea name="opinion1" id="opinion1" rows="4" cols="50"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
+        <div id="formDonar">
+            <form name="formularioDonacion" action="https://formspree.io/f/mjkvkbwp" method="post">
+                <div class="datosDonar">
+                    <label for="nombre1">Tus Nombres:</label>
+                    <input type="text" id="nombre1" name="nombre1" required>
+                </div>
+                <div class="datosDonar">
+                    <label for="apellido1">Tus Apellidos:</label>
+                    <input type="text" id="apellido1" name="apellido1" required>
+                </div>
+                <div class="datosDonar">
+                    <label for="fechaNac1">Tu fecha de nacimiento:</label>
+                    <input type="date" id="fechaNac1" name="fechaNac1" required>
+                </div>
+                <div class="datosDonar">
+                    <label for="email1">Tu Correo:</label>
+                    <input type="email" id="email1" name="email1" required>
+                </div>
+                <div class="datosDonar">
+                    <label for="donacion1">Elijo mi forma de Donar:</label>
+                    <select name="formadonar" id="comoDonar" required>
+                        <option value="opcion1">--Elije tu forma--</option>
+                        <option value="opcion2">Transferencia</option>
+                        <option value="opcion3">Mercado Pago</option>
+                    </select>
+                </div>
+                <div class="datosDonar">
+                    <div id="motivoDonar">
+                        <label  for="opinion1">¿Qué te motiva a donar?</label>
+                        <textarea name="opinion1" id="opinion1" rows="6" cols="80"></textarea>
+                    </div>
+                </div>
+                <button id="botonSubmit" type="submit">Enviar</button>
+            </form>
+        </div>
         <!-- Datos de cuentas para donar -->
         <section>
             <table id="tablaCuentas">
-                <caption>Nuetros medios para donar.</caption>
+                <caption>Nuestros medios para donar.</caption>
                 <thead>
                     <tr>
                         <th>Por transferencia</th>
@@ -158,6 +165,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
