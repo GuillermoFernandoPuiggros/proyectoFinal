@@ -65,54 +65,91 @@
     <main>
         <section>
             <h4>Ser voluntario</h4>
-            <p>
-                Ser voluntario es un gran compromiso, implica mucho trabajo y entrega con unos seres hermosos.
-            </p>
-            <p>
-                Ellos demandarán mucho amor y te compensarán con su amistad incondicional.
-            </p>
-            <p>
-                Para ser voluntario en el Hogar Miau Guau, completa el formulario con tus datos.</p>
-            <p>
-                Una vez enviados sus datos y confirmado que cumplen los requisitos, recibirán un correo confirmando su
-                postulación.
-            </p>
-            <p>
-                Serán ingresados a una base de datos y en la medida que se necesiten, los iremos convocando.
-            </p>
-            <p>
-                ¡Muchas gracias por ser voluntario!
-            </p>
+            <div id="voluntariado">
+                <p>
+                    Ser voluntario es un gran compromiso, implica mucho trabajo y entrega con unos seres hermosos.
+                </p>
+                <p>
+                    Ellos demandarán mucho amor y te compensarán con su amistad incondicional.
+                </p>
+                <p>
+                    Para ser voluntario en el Hogar Miau Guau, completa el formulario con tus datos.</p>
+                <p>
+                    Una vez enviados sus datos y confirmado que cumplen los requisitos, recibirán un correo confirmando
+                    su
+                    postulación.
+                </p>
+                <p>
+                    Serán ingresados a una base de datos y en la medida que se necesiten, los iremos convocando.
+                </p>
+                <p>
+                    ¡Muchas gracias por ser voluntario!
+                </p>
+            </div>
         </section>
-        <form name="formularioVoluntariado" action="https://formspree.io/f/xnnqnazg" method="post">
-            <label for="nombre2">Tus Nombres:</label>
-            <input type="text" id="nombre2" name="nombre2" required autofocus>
-            <label for="apellido2">Tus Apellidos:</label>
-            <input type="text" id="apellido2" name="apellido2" required>
-            <label for="dni2"> Tu DNI:</label>
-            <input type="number" id="dni2" name="dni2" required size="7" maxlength="8">
-            <label for="fechaNac2">Tu fecha de nacimiento:</label>
-            <input type="date" id="fechaNac2" name="fechaNac2" required>
-            <label for="domicilio2">Tu domicilio:</label>
-            <input type="text" id="domicilio2" name="domicilio2" required>
-            <label for="localidad2">Localidad:</label>
-            <input type="text" id="localidad2" name="localidad2" required>
-            <label for="provincia2">Provincia:</label>
-            <input type="text" id="provincia2" name="provincia2" required>
-            <label for="email2">Tu Correo:</label>
-            <input type="email" id="email3" name="email3" required>
-            <label for="telefono2">Tu celular:</label>
-            <input type="tel" class="telefono2" name="telefono2" required size="3" maxlength="4" placeholder="Carac.">
-            <input type="tel" class="telefono2" name="telefono2" required size="7" maxlength="8" placeholder="Número">
-            <label for="voluntario2">Elijo mi tiempo:</label>
-            <select name="miTiempo" id="miTiempo" required>
-                <option value="opcion1">De mañana</option>
-                <option value="opcion2">De tarde</option>
-            </select>
-            <label for="opinion2">¿Qué te motiva a ser voluntario?</label>
-            <textarea name="opinion2" id="opinion2" rows="4" cols="50"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div id="formVoluntario">
+            <form name="formularioVoluntariado" action="https://formspree.io/f/xnnqnazg" method="post">
+                <div class="datosVoluntario">
+                    <label for="nombre2">Tus Nombres:</label>
+                    <input type="text" id="nombre2" name="nombre2" required autofocus>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="apellido2">Tus Apellidos:</label>
+                    <input type="text" id="apellido2" name="apellido2" required>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="dni2">Tu DNI:</label>
+                    <input type="number" id="dni2" name="dni2" required size="7" maxlength="8">
+                </div>
+                <div class="datosVoluntario">
+                    <label for="fechaNac2">Tu fecha de nacimiento:</label>
+                    <input type="date" id="fechaNac2" name="fechaNac2" required>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="domicilio2">Tu domicilio:</label>
+                    <input type="text" id="domicilio2" name="domicilio2" required>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="localidad2">Localidad:</label>
+                    <input type="text" id="localidad2" name="localidad2" required>
+                </div>
+                <div class="datosVoluntario"><label for="provincia2">Provincia:</label>
+                    <input type="text" id="provincia2" name="provincia2" required>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="email2">Tu Correo:</label>
+                    <input type="email" id="email2" name="email2" required>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="telefono2">Tu celular:</label>
+                    <div id="tuTelefono2">
+                        <div><input type="tel" id="caracteristica2" name="telefono2" required size="3" maxlength="4"
+                                placeholder="Carac.">
+                        </div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div>
+                            <input type="tel" id="numero2" name="telefono2" required size="7" maxlength="8"
+                                placeholder="Número">
+                        </div>
+                    </div>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="voluntario2">Elije tu tiempo:</label>
+                    <select name="miTiempo" id="tuTiempo" required>
+                        <option value="opcion1">--Elije tu horario--</option>
+                        <option value="opcion2">De mañana</option>
+                        <option value="opcion3">De tarde</option>
+                    </select>
+                </div>
+                <div class="datosVoluntario">
+                    <label for="opinion2">¿Qué te motiva a ser voluntario?</label>
+                    <textarea name="opinion2" id="opinion2" rows="6" cols="80"></textarea>
+                </div>
+                <button id="botonSubmit" type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <h6>¡Síguenos en nuestras redes!</h6>
