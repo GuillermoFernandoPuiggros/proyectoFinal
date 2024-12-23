@@ -61,7 +61,7 @@ for (let i = 0; i < productos.length; i++) {
                     <p class="titTarjeta">${productos[i].nombre}</p>
                     <p class="descripProd">${productos[i].descripcion}</p>
                     <p class="precioProd">$ ${productos[i].precio}</p>
-                    <div>
+                    <div class="carritoCompras">
                         <input class="btnCarrito" type="button" value="Añadir al Carrito ">
                         <i class="fa-solid fa-cart-arrow-down"></i>
                     </div>
@@ -89,7 +89,7 @@ for (let i = 0; i < botonesAgregar.length; i++) {
 
     const productosLi = document.createElement("li");
 
-    productosLi.innerText = `Eligió ${productos[i].nombre} $ ${productos[i].precio}`;
+    productosLi.innerText = `Eligió: ${productos[i].nombre} $ ${productos[i].precio}`;
 
     listaCarrito.appendChild(productosLi);
 
@@ -100,8 +100,7 @@ for (let i = 0; i < botonesAgregar.length; i++) {
     carritoVacio.innerText = "";
   }
 
-  botonesAgregar[i].addEventListener("click", agregarAlCarrito);
-}
+  botonesAgregar[i].addEventListener("click", agregarAlCarrito);}
 
 const botonLimpiar = document.querySelector("#btnLimpiar");
 

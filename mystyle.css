@@ -6,36 +6,41 @@ html {
 
 header {
   background: #22177a;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+  margin: auto;
 }
 
-#logo {
-  float: left;
-  padding-top: 20px;
-  margin-left: 20px;
-}
 #logoNombre {
-  width: auto;
-  height: 150px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+#nombrePpal {
+  width: 800px;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 h1 {
   font-family: "Spicy Rice", Arial, Helvetica, sans-serif;
-  font-size: 10rem;
-  color: #f5eee6; 
-  padding-top: 50px;
-  padding-left: 200px;
+  font-size: 8rem;
+  text-align: center;
+  color: #f5eee6;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
 #navegar li {
   list-style: none;
   background: black;
   color: white;
-  width: 100px;
-  padding: 10px;
-  margin: 0px;
+  width: 85px;
+  padding: 8px;
 }
 
 #navegar li:hover {
@@ -50,35 +55,130 @@ nav a {
 nav a:visited {
   color: white;
 }
+
 #navegar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+  left: 200px;
 }
 
 .menuNav {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1rem;
   font-family: "Source Serif 4", Arial, Helvetica, sans-serif;
-  margin: 0px -10px;
+}
+
+#encabezado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+
+  h1 {
+    font-size: 4.6rem;
+    margin-top: -15px;
+  }
+
+  #logoNombre {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  #navegar li {
+    width: 68px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  #nombrePpal {
+    width: 250px;
+    height: 50px;
+    padding-left: 15px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #navegar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    margin-top: 60px;
+    width: 320px;
+    position: relative;
+    left: 0;
+  }
+
+  .menuNav {
+    font-size: 1.1rem;
+  }
+
+  .liMedia {
+    width: 60px;
+  }
+
+  #nuestraUbicacion {
+    width: 300px;
+    height: 200px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  #mapa {
+    width: 300px;
+    height: 200px;
+  }
+
+  .compromiso {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  h4 {
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  #galeria2 {
+    width: 320px;
+    height: 194px;
+    background-color: darkslategray;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 /* Estilo del body general a todas las páginas */
 
 body {
   background: #605ea1;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 /* Estilo del video isntitucional */
 
 #contenedorVideo {
-  width: 450px;
-  height: 338px;
-  margin-top: 80px;
+  width: 317px;
+  height: 240px;
+  position: relative;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   background: url(videos/sombra.png);
@@ -130,9 +230,10 @@ h3 {
 /* Estilo de los h4 de todas las páginas */
 
 h4 {
-  margin-top: 130px;
+  text-align: left;
+  margin-top: 5rem;
   color: darkorange;
-  padding-left: 80px;
+  padding-left: 50px;
   font-size: 3rem;
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
 }
@@ -162,18 +263,18 @@ h6 {
 /* Estilo de la ubicación del Hogar */
 
 #nuestraUbicacion {
-  width: 600px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
-  border: 25px solid rgb(89, 4, 97);
-  border-radius: 40px;
+  margin-bottom: 30px;
 }
 
 /* Estilo del footer de las paginas */
 
 footer {
   background: #e6e9af;
+  padding-bottom: 30px;
 }
 
 footer p {
@@ -221,7 +322,7 @@ footer a:visited {
 }
 
 #contactar {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .datosContacto label {
@@ -273,7 +374,7 @@ footer a:visited {
   margin-bottom: 20px;
   margin-left: 5px;
   text-align: center;
-} 
+}
 
 #opinion4 {
   margin-left: 60px;
@@ -289,7 +390,7 @@ footer a:visited {
   border: 2px solid wheat;
   border-radius: 2rem;
   margin-top: 40px;
-  margin-left: 350px;
+  margin-left: 150px;
 }
 
 /* Estilo de los logros */
@@ -325,12 +426,14 @@ footer a:visited {
   width: 250px;
   height: auto;
   padding: 20px;
+  border-radius: 1.5rem;
 }
 
 #expresiones {
-  font-size: rem;
+  font-size: 2rem;
   font-family: "Mukta", Arial, Helvetica, sans-serif;
   color: bisque;
+  margin-left: 30px;
 }
 
 .reseñas p {
@@ -360,7 +463,6 @@ footer a:visited {
   gap: 10px;
 }
 
-
 /* Estilo de donaciones */
 
 .explicDonar {
@@ -372,7 +474,7 @@ footer a:visited {
 }
 
 #donar {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .datosDonar label {
@@ -440,7 +542,7 @@ footer a:visited {
   margin-bottom: 20px;
   margin-left: 5px;
   text-align: center;
-} 
+}
 
 #opinion1 {
   margin-left: 60px;
@@ -449,19 +551,25 @@ footer a:visited {
 }
 
 #datosCuentas {
-  background: indigo;
-  width: 500px;
-  margin: auto;
+  background: #605ea1;
+  width: auto;
+  margin: 30px auto;
+}
+
+#datosCuentas h4 {
+  text-align: center;
 }
 
 .ntrasCuentas {
-  font-size: 1.5rem;
+  width: 250px;
+  height: 80px;
+  font-size: 2.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background: brown;
-  padding: 10px;
+  margin: auto;
   border: 2.5px solid red;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 #datosCuentas h5 {
@@ -480,10 +588,11 @@ footer a:visited {
 }
 
 #contenedorCuentas {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 5px;
-  gap: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 /* Estilo quienes somos */
@@ -533,7 +642,7 @@ footer a:visited {
 }
 
 #quienesTrabajan img {
-  margin-left: 5%;
+  margin-left: 2rem;
   border: 0.2rem solid orange;
   border-radius: 1.5rem;
 }
@@ -542,6 +651,10 @@ footer a:visited {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+#sostenemos {
+  margin-bottom: 30px;
 }
 
 /* Estilos galeria */
@@ -708,7 +821,7 @@ footer a:visited {
   margin-bottom: 50px;
 }
 
-#formVoluntario label{
+#formVoluntario label {
   display: flex;
   flex-wrap: wrap;
   font-family: "Mukta", Arial, Helvetica, sans-serif;
@@ -717,7 +830,7 @@ footer a:visited {
   padding-bottom: 20px;
 }
 
-.datosVoluntario label{
+.datosVoluntario label {
   display: block;
   margin-bottom: -5px;
 }
@@ -727,7 +840,7 @@ footer a:visited {
 #domicilio2,
 #localidad2,
 #provincia2,
-#email2  {
+#email2 {
   width: 300px;
   height: 25px;
   margin-top: -25px;
@@ -767,7 +880,7 @@ footer a:visited {
   align-items: baseline;
 }
 
- #caracteristica2 {
+#caracteristica2 {
   width: 50px;
   height: 25px;
   margin-top: -25px;
@@ -784,7 +897,7 @@ footer a:visited {
   margin-bottom: 20px;
   margin-left: 5px;
   text-align: center;
-} 
+}
 
 #opinion2 {
   margin-left: 60px;
@@ -803,10 +916,10 @@ footer a:visited {
 }
 
 #adoptar {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
-#formAdopcion label{
+#formAdopcion label {
   display: flex;
   flex-wrap: wrap;
   font-family: "Mukta", Arial, Helvetica, sans-serif;
@@ -815,7 +928,7 @@ footer a:visited {
   padding-bottom: 20px;
 }
 
-.datosAdopcion label{
+.datosAdopcion label {
   display: block;
   margin-bottom: -5px;
 }
@@ -825,7 +938,7 @@ footer a:visited {
 #domicilio3,
 #localidad3,
 #provincia3,
-#email3  {
+#email3 {
   width: 300px;
   height: 25px;
   margin-top: -25px;
@@ -865,7 +978,7 @@ footer a:visited {
   align-items: baseline;
 }
 
- #caracteristica3 {
+#caracteristica3 {
   width: 50px;
   height: 25px;
   margin-top: -25px;
@@ -882,12 +995,16 @@ footer a:visited {
   margin-bottom: 20px;
   margin-left: 5px;
   text-align: center;
-} 
+}
 
 #opinion3 {
   margin-left: 60px;
   width: 300px;
   height: 200px;
+}
+
+#formVoluntario {
+  margin-bottom: 30px;
 }
 
 /* Estilo de tienda */
@@ -912,6 +1029,10 @@ footer a:visited {
   font-size: 1.7rem;
   font-weight: bold;
   font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  color: purple;
+  position: relative;
+  left: 175px;
+  
 }
 
 .cuotaProd {
@@ -935,6 +1056,100 @@ footer a:visited {
   gap: 10px;
 }
 
+/* Estilo del carrito */
+
+#carritoDeCompras {
+  width: 400px;
+  height: auto;
+  background: cadetblue;
+  border: 2px solid darkgreen;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 4rem;
+}
+
+#carritoDeCompras h4 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: red;
+  margin-top: 0;
+  text-align: left;
+}
+
+#listadoDeCompras li{
+  list-style: none;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding-left: -0.5rem;
+}
+
+#elTotal {
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding-left: 1.1rem;
+}
+
+#btnLimpiar {
+  float: left;
+  width: 10rem;
+  height: 2rem;
+  background: black;
+  text-align: center;
+  border: 2px solid wheat;
+  border-radius: 2rem;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 5px;
+}
+
+#btnIrAPagar {
+  width: 10rem;
+  height: 2rem;
+  background: black;
+  text-align: center;
+  border: 2px solid wheat;
+  border-radius: 2rem;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.btnCarrito {
+  width: 15rem;
+  height: 3rem;
+  background: black;
+  text-align: center;
+  border: 2px solid wheat;
+  border-radius: 2rem;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.fa-solid {
+  color: black;
+  font-size: 2rem;
+}
+
+.carritoCompras {
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+#mensajeVacio {
+  width: 130px;
+  color: red;
+  font-weight: bolder;
+  font-family: "Kavivanar", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 135px;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+
 /* .input-icon-container {
   position: relative;
 }
@@ -945,5 +1160,3 @@ footer a:visited {
   left: 10px;
   transform: translateY(-50%);
 } */
-
-

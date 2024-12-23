@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Mukta:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Spicy+Rice&display=swap"
         rel="stylesheet">
     <!-- Reset de CSS -->
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
     <!-- Inclusion de logo en pestañas -->
     <link rel="icon" href="imagenes/logo.ico">
     <!-- Font Awesome -->
@@ -25,48 +25,52 @@
 
 <body>
     <header id="encabezadoPrincipal">
-        <div id="logoNombre">
-            <a href="index.html"><img id="logo" src="imagenes/logo.png" width="100" height="100"></a>
-            <h1>HOGAR MIAU GUAU</h1>
-        </div>
-        <nav>
-            <div id="navegar">
-                <div class="menuNav">
-                    <ul>
-                        <li><i class="fa-solid fa-house"></i> Institucional</li>
-                        <li class="institucional"><a href="quienes_somos.html">Quienes somos</a></li>
-                        <li class="institucional"><a href="nuestros_logros.html">Nuestros logros</a></li>
-                        <li class="institucional"><a href="galeria.html">Galería de fotos</a></li>
-                        <li class="institucional"><a href="colaboradores.html">Colaboradores</a></li>
-                        <li class="institucional"><a id="ubicacion" href="#nuestraUbicacion">Ubicación</a></li>
-                    </ul>
-                </div>
-                <div class="menuNav">
-                    <ul>
-                        <li><i class="fa-solid fa-handshake-angle"></i> Cómo ayudar</li>
-                        <li class="ayudar"><a href="donacion.html">Donación</a></li>
-                        <li class="ayudar"><a href="voluntarios.html">Voluntariado</a></li>
-                        <li class="ayudar"><a href="adopcion.html">Adopción</a></li>
-                    </ul>
-                </div>
-                <div class="menuNav">
-                    <ul>
-                        <li><i class="fa-solid fa-store"></i> <a href="tienda.html">Tienda</a></li>
-                    </ul>
-                </div>
-                <div class="menuNav">
-                    <ul>
-                        <li><i class="fa-solid fa-mobile-screen"></i> <a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+        <div id="encabezado">
+            <div id="logoNombre">
+                <a href="index.html"><img id="logo" src="imagenes/logo.png" width="100" height="100"></a>
             </div>
-        </nav>
+            <div id="nombrePpal">
+                <h1>HOGAR MIAU GUAU</h1>
+            </div>
+            <nav>
+                <div id="navegar">
+                    <div class="menuNav">
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i> Institucional</li>
+                            <li class="institucional"><a href="quienes_somos.html">Quienes somos</a></li>
+                            <li class="institucional"><a href="nuestros_logros.html">Nuestros logros</a></li>
+                            <li class="institucional"><a href="galeria.html">Galería de fotos</a></li>
+                            <li class="institucional"><a href="colaboradores.html">Colaboradores</a></li>
+                            <li class="institucional"><a id="ubicacion" href="#nuestraUbicacion">Ubicación</a></li>
+                        </ul>
+                    </div>
+                    <div class="menuNav">
+                        <ul>
+                            <li><i class="fa-solid fa-handshake-angle"></i> Cómo ayudar</li>
+                            <li class="ayudar"><a href="donacion.html">Donación</a></li>
+                            <li class="ayudar"><a href="voluntarios.html">Voluntariado</a></li>
+                            <li class="ayudar"><a href="adopcion.html">Adopción</a></li>
+                        </ul>
+                    </div>
+                    <div class="menuNav">
+                        <ul>
+                            <li class="liMedia"><i class="fa-solid fa-store"></i> <a href="tienda.html">Tienda</a></li>
+                        </ul>
+                    </div>
+                    <div class="menuNav">
+                        <ul>
+                            <li class="liMedia"><i class="fa-solid fa-mobile-screen"></i> <a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <!--  Sección video institucional -->
+        <!--  Sección video institucional  -->
         <section>
             <div id="contenedorVideo">
-                <video id="videoIns" controls width="450">
+                <video id="videoIns" controls>
                     <source src="videos/video.mp4" type="video/mp4">
                     <track src="videos/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
                 </video>
@@ -74,7 +78,7 @@
         </section>
         <!-- Compromiso del Hogar -->
         <section>
-            <h2>Nuestro Compromiso</h2>
+            <h4>Nuestro Compromiso</h4>
             <p class="compromiso">
                 Estamos comprometidos en brindar asistencia y contención a los animales indefensos, que son abandonados.
                 en la vía pública.</p><br>
@@ -92,9 +96,9 @@
         <section>
             <h4>¡Encontranos acá!</h4>
             <div id="nuestraUbicacion">
-                <iframe
+                <iframe id="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.778391854286!2d-58.44923467862322!3d-34.63715726231092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb7065d907f%3A0x9ce77385d2f35dd3!2sParque%20Chacabuco%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728956511422!5m2!1ses-419!2sar"
-                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
